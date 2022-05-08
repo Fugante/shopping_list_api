@@ -1,0 +1,30 @@
+GET http://localhost:3001/api/shopping-list
+
+###
+POST http://localhost:3001/api/shopping-list
+Content-Type: application/json
+
+{
+    "name": "mandarinas",
+    "unit": "pieza",
+    "quantity": 10
+}
+
+###
+GET http://localhost:3001/api/shopping-list/62782fbdec00c2b25bf987de
+
+###
+PUT http://localhost:3001/api/shopping-list/62782fbdec00c2b25bf987de
+Content-Type: application/json
+
+{
+    "name": "toronjas",
+    "unit": "pieza",
+    "quantity": 2
+}
+
+###
+DELETE http://localhost:3001/api/shopping-list/627833ddfff595b58f9b409f
+
+###
+GEt http://localhost:3001/api/wrong-url/
